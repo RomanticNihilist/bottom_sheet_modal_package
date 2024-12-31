@@ -1,6 +1,3 @@
-Here’s the `README.md` for your Flutter package:
-
-```markdown
 # bottom_package_modal_package
 
 A simple and customizable Flutter package for creating and displaying a `showModalBottomSheet` with customizable height and background color. This package provides a reusable widget, `BottomSheetExample`, which simplifies the use of `showModalBottomSheet` in your Flutter application.
