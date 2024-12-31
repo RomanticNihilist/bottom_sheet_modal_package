@@ -8,13 +8,17 @@ A simple and customizable Flutter package for creating and displaying a `showMod
 - Expandable to include more customizations and features in future releases.
 - Built using Flutter's `showModalBottomSheet` for seamless integration.
 
+## Screenshot
+
+![Alt text](C:\android\IKON%20COMPONENT%20TESTING\bottom_modal_sheet_2\Screenshot_20241231_130550.png?raw=true "Bottom Sheet Modal View")
+
 ## Installation
 
 Add the following dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  bottom_package_modal_package:
+  bottom_sheet_modal_package:
     git:
       url: https://github.com/RomanticNihilist/bottom_package_modal_package
 ```
