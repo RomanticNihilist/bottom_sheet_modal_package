@@ -10,7 +10,7 @@ A simple and customizable Flutter package for creating and displaying a `showMod
 
 ## Screenshot
 
-![Alt text](C:\android\IKON%20COMPONENT%20TESTING\bottom_modal_sheet_2\Screenshot_20241231_130550.png?raw=true "Bottom Sheet Modal View")
+![Alt text](https://i.imgur.com/85hgIhx.png "Bottom Sheet Modal View")
 
 ## Installation
 
