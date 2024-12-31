@@ -35,7 +35,7 @@ Import the package in your Dart file:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'bottom_package_modal_package/bottom_package_modal_package.dart';
+import 'package:bottom_sheet_modal_package/bottom_sheet_modal_package.dart';
 ```
 
 ### Example
