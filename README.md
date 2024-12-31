@@ -43,7 +43,6 @@ import 'bottom_package_modal_package/bottom_package_modal_package.dart';
 Below is a complete example of how to use the `BottomSheetExample` widget:
 
 ```dart
-import 'package:flutter/material.dart';
 
 void main() => runApp(const BottomSheetApp());
 
