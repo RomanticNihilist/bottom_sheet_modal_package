@@ -59,7 +59,9 @@ class BottomSheetApp extends StatelessWidget {
     );
   }
 }
-
+```
+### Here is the code of the BottomSheetExample widget, u don't have to write this code explicitly:
+```dart
 class BottomSheetExample extends StatelessWidget {
   final int height;
   final Color color;
