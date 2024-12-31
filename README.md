@@ -116,7 +116,7 @@ The `BottomSheetExample` widget currently supports the `height` and `color` para
 
 ## Contributions
 
-Contributions are welcome! If you encounter any issues or have suggestions for improvement, please don't ping me, do it yourself :), just kidding, amakei korte hobe :').
+Contributions are welcome! If you encounter any issues or have suggestions for improvement, please don't ping me :).
 
 ## License
 
