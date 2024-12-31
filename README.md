@@ -112,12 +112,6 @@ class BottomSheetExample extends StatelessWidget {
 
 The `BottomSheetExample` widget currently supports the `height` and `color` parameters for customization. Additional properties and features can be added in future updates.
 
-## Repository
-
-Find the source code and contribute to the project on GitHub:
-
-[GitHub Repository](https://github.com/RomanticNihilist/bottom_package_modal_package)
-
 ## Contributions
 
 Contributions are welcome! If you encounter any issues or have suggestions for improvement, please don't ping me, do it yourself :), just kidding, amakei korte hobe :').
