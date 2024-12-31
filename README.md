@@ -56,7 +56,7 @@ class BottomSheetApp extends StatelessWidget {
         appBar: AppBar(title: const Text('Bottom Sheet Sample')),
         body: const BottomSheetExample(
           color: Color.fromARGB(255, 126, 105, 18),
-          height: 100,
+          height: 300,
         ),
       ),
     );
