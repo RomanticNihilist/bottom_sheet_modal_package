@@ -54,9 +54,22 @@ class BottomSheetApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Bottom Sheet Sample')),
-        body: const BottomSheetExample(
-          color: Color.fromARGB(255, 198, 162, 14),
-          height: 300,
+        body: BottomSheetExample(
+          color: Color.fromARGB(255, 126, 105, 18),
+          height: 100,
+          bottomSheetModalWidget: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                const Text('Modal BottomSheet'),
+                ElevatedButton(
+                  child: const Text('Close BottomSheet'),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -68,8 +81,8 @@ class BottomSheetApp extends StatelessWidget {
 class BottomSheetExample extends StatelessWidget {
   final int height;
   final Color color;
-
-  const BottomSheetExample({super.key, required this.color, required this.height});
+  final Widget bottomSheetModalWidget;
+  const BottomSheetExample({super.key, required this.color, required this.height, required this.bottomSheetModalWidget});
 
   @override
   Widget build(BuildContext context) {
@@ -78,24 +91,13 @@ class BottomSheetExample extends StatelessWidget {
         child: const Text('showModalBottomSheet'),
         onPressed: () {
           showModalBottomSheet<void>(
-            backgroundColor: color,
+            backgroundColor:color,
             context: context,
             builder: (BuildContext context) {
               return SizedBox(
-                height: height.toDouble(),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      const Text('Modal BottomSheet'),
-                      ElevatedButton(
-                        child: const Text('Close BottomSheet'),
-                        onPressed: () => Navigator.pop(context),
-                      ),
-                    ],
-                  ),
-                ),
+                  height: height.toDouble(),
+                  //color: Colors.amber,
+                  child: bottomSheetModalWidget
               );
             },
           );
