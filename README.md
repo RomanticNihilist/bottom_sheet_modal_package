@@ -19,8 +19,9 @@ Add the following dependency to your `pubspec.yaml` file:
 ```yaml
 dependencies:
   bottom_sheet_modal_package:
-    git:
-      url: https://github.com/RomanticNihilist/bottom_package_modal_package
+  git:
+    url: https://github.com/RomanticNihilist/bottom_package_modal_package
+    ref: main
 ```
 
 Then, run the following command to fetch the package:
@@ -110,10 +111,11 @@ class BottomSheetExample extends StatelessWidget {
 
 ### Parameters
 
-| Parameter | Type   | Description                        |
-|-----------|--------|------------------------------------|
-| `color`   | `Color`| Background color of the bottom sheet. |
-| `height`  | `int`  | Height of the bottom sheet in pixels. |
+| Parameter | Type     |                        Description                         |
+|-----------|----------|:----------------------------------------------------------:|
+| `color`   | `Color`  |           Background color of the bottom sheet.            |
+| `height`  | `int`    |           Height of the bottom sheet in pixels.            |
+|   `bottomSheetModalWidget`| `Widget` | Dynamimcally passing the content of the bottom sheet modal |
 
 ## Customization
 
