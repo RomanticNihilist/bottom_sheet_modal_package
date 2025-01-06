@@ -76,6 +76,18 @@ class BottomSheetApp extends StatelessWidget {
     );
   }
 }
+
+```
+### Here is the FileItem class:
+```dart
+class FileItem {
+  final String name;
+  final String icon;
+  final bool isFolder;
+  final bool isStarred;
+
+  FileItem({required this.name, required this.icon, required this.isFolder, required this.isStarred});
+}
 ```
 ### Here is the code of the BottomSheetExample widget, u don't have to write this code explicitly:
 ```dart
@@ -83,7 +95,15 @@ class BottomSheetExample extends StatelessWidget {
   final int height;
   final Color color;
   final Widget bottomSheetModalWidget;
-  const BottomSheetExample({super.key, required this.color, required this.height, required this.bottomSheetModalWidget});
+  final Function(dynamic)? onFilesAdded;
+
+  const BottomSheetExample({
+    super.key,
+    this.onFilesAdded, // This is an optional parameter.
+    required this.color,
+    required this.height,
+    required this.bottomSheetModalWidget,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +136,7 @@ class BottomSheetExample extends StatelessWidget {
 | `color`   | `Color`  |           Background color of the bottom sheet.            |
 | `height`  | `int`    |           Height of the bottom sheet in pixels.            |
 |   `bottomSheetModalWidget`| `Widget` | Dynamimcally passing the content of the bottom sheet modal |
+|       `onFilesAdded`                    |  `Function(dynamic)`        |  It's a callback function might be used to manage states   |
 
 ## Customization
 
