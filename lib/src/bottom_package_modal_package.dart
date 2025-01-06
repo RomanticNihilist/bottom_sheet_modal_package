@@ -2,6 +2,15 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(const BottomSheetApp());
 
+class FileItem {
+  final String name;
+  final String icon;
+  final bool isFolder;
+  final bool isStarred;
+
+  FileItem({required this.name, required this.icon, required this.isFolder, required this.isStarred});
+}
+
 class BottomSheetApp extends StatelessWidget {
   const BottomSheetApp({super.key});
 
@@ -36,7 +45,15 @@ class BottomSheetExample extends StatelessWidget {
   final int height;
   final Color color;
   final Widget bottomSheetModalWidget;
-  const BottomSheetExample({super.key, required this.color, required this.height, required this.bottomSheetModalWidget});
+  final Function(dynamic)? onFilesAdded;
+
+  const BottomSheetExample({
+    super.key,
+    this.onFilesAdded,
+    required this.color,
+    required this.height,
+    required this.bottomSheetModalWidget,
+  });
 
   @override
   Widget build(BuildContext context) {
