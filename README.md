@@ -78,17 +78,6 @@ class BottomSheetApp extends StatelessWidget {
 }
 
 ```
-### Here is the FileItem class:
-```dart
-class FileItem {
-  final String name;
-  final String icon;
-  final bool isFolder;
-  final bool isStarred;
-
-  FileItem({required this.name, required this.icon, required this.isFolder, required this.isStarred});
-}
-```
 ### Here is the code of the BottomSheetExample widget, u don't have to write this code explicitly:
 ```dart
 class BottomSheetExample extends StatelessWidget {
